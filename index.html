@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Custom Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f4f4f4;
+            margin: 0;
+            overflow: hidden;
+        }
+        .background {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(270deg, #ff9a9e, #fad0c4, #fad0c4, #ffdde1);
+            background-size: 400% 400%;
+            animation: gradientAnimation 10s ease infinite;
+            z-index: -1;
+        }
+        @keyframes gradientAnimation {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+        .profile {
+            margin: 40px auto;
+            padding: 40px;
+            max-width: 600px;
+            background: white;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+            border-radius: 15px;
+            position: relative;
+        }
+        img {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+        .social-links a {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            margin: 15px;
+            padding: 12px 25px;
+            text-decoration: none;
+            font-size: 22px;
+            font-weight: bold;
+            color: white;
+            border-radius: 12px;
+            transition: all 0.3s ease;
+            box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+        }
+        .social-links a img {
+            width: 24px;
+            height: 24px;
+            margin-right: 10px;
+        }
+        #discord {
+            background: #5865F2;
+        }
+        #discord:hover {
+            background: #4854C7;
+        }
+        #youtube {
+            background: #FF0000;
+        }
+        #youtube:hover {
+            background: #CC0000;
+        }
+        #gmail {
+            background: #D44638;
+        }
+        #gmail:hover {
+            background: #B33626;
+        }
+        #hypixel {
+            background: #FFD700;
+            color: black;
+        }
+        #hypixel:hover {
+            background: #E6C200;
+        }
+    </style>
+</head>
+<body>
+    <div class="background"></div>
+    <div class="profile">
+        <img id="profile-pic" src="https://cdn.discordapp.com/avatars/1329670134180352044/be4f1a3ba3254bc3ea7c32037209f803.png?size=1024" alt="Legion Profile">
+        <h2 id="name">LegionXI</h2>
+        <p id="bio">Hey I'm LegionXI, also known as NotLive. I really like to play Hypixel Skyblock.</p>
+        <div class="social-links">
+            <a href="https://discord.gg/BzcAtwSWWj" target="_blank" id="discord">
+                <img src="/mnt/data/image.png" alt="Discord Logo">Join My Discord
+            </a>
+            <a href="https://www.youtube.com/@NotLiveXD" target="_blank" id="youtube">
+                <img src="/mnt/data/red-youtube-logo-symbol-701751694792489qxkccchok1.png" alt="YouTube Logo">Subscribe on YouTube
+            </a>
+            <a href="https://mail.google.com/mail/u/0/#sent?compose=CllgCJZXhjMrvSLdBfKndQgNljvKhQNwlLTbVwgXhmKgRPHpDxrnTXTqnNXprRHnslFXNmFxZGV" target="_blank" id="gmail">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/4/4e/Gmail_Icon.png" alt="Gmail Logo">Email Me
+            </a>
+            <a href="https://sky.shiiyu.moe/stats/LegionXI/Apple" target="_blank" id="hypixel">
+                <img src="https://upload.wikimedia.org/wikipedia/en/5/5a/Hypixel_Logo.png" alt="Hypixel Skyblock Logo">View My Hypixel Stats
+            </a>
+        </div>
+    </div>
+</body>
+</html>
+
+</html>
